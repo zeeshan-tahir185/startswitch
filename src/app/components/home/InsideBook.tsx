@@ -2,7 +2,7 @@ import React from 'react'
 
 const InsideBook = () => {
     return (
-        <section className='sm:mx-4 md:mx-[87px] relative'>
+        <section className='sm:mx-4 md:mx-[30px] 2xl:mx-[87px] relative'>
             <section className='max-w-[1746px] rounded-3xl md:rounded-[90px] mx-auto bg-white min-h-[1000px] flex flex-col lg:flex-row gap-3 md:gap-[50px] justify-center items-center pt-[40px] px-[15px] p-[20px]'>
                 <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[650px]'>
                     <div className='flex flex-col gap-[13px] lg:gap-[10px]'>

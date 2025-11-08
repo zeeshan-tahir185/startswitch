@@ -9,6 +9,9 @@ import Media from '../components/about/Media'
 
 export const metadata = {
   title: 'About Anil Mathews | The Start Switch',
+   icons: {
+    icon: '/images/favicon.png',
+  },
   description:
     'Entrepreneur and author Anil Mathews, founder of Alphabyte Ventures and author of The Start Switch. Principles behind progress, momentum, and measurable change.',
   alternates: {

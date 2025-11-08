@@ -6,39 +6,57 @@ import { X } from 'lucide-react'
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState('')
 
   const openModal = () => setIsModalOpen(true)
-  const closeModal = () => setIsModalOpen(false)
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSuccess(false)
+    setError('')
+    setName('')
+    setEmail('')
+    setMessage('')
+  }
+
+  const handleSubmit = async () => {
+    setError('')
+    setSuccess(false)
+
+    if (!name || !email || !message) {
+      setError('Please fill in all fields.')
+      return
+    }
+
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setSuccess(true)
+        setName('')
+        setEmail('')
+        setMessage('')
+      } else {
+        setError('Failed to send message. Try again.')
+      }
+    } catch {
+      setError('Something went wrong.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <>
-      {/* ===== Top Section ===== */}
-      {/* <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-wrap gap-[9px] w-full items-center justify-center '>
-        <Link href="/#" className='hover:border-b border-[#CD623B] w-[195px] h-[192px] md:w-[232px] md:h-[202px] py-[34px] px-[17px] md:px-[22px] gap-[10px] bg-[#FFFFFF] rounded-[24px] flex flex-col items-center justify-center'>
-          <img src="/images/icon1.png" alt="" />
-          <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>The Start Switch</h3>
-        </Link>
-        <Link href="/#graph" className='hover:border-b border-[#CD623B] w-[195px] h-[192px] md:w-[232px] md:h-[202px] py-[34px] px-[17px] md:px-[22px] gap-[10px] bg-[#FFFFFF] rounded-[24px] flex flex-col items-center justify-center'>
-          <img src="/images/icon2.png" alt="" />
-          <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>The Switch Curve™</h3>
-        </Link>
-        <Link href="/#freetoolkit" className='hover:border-b border-[#CD623B] w-[195px] h-[192px] md:w-[232px] md:h-[202px] py-[34px] px-[17px] md:px-[22px] gap-[10px] bg-[#FFFFFF] rounded-[24px] flex flex-col items-center justify-center'>
-          <img src="/images/icon3.png" alt="" />
-          <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>The Toolkit</h3>
-        </Link>
-        <Link href="/#movement" className='hover:border-b border-[#CD623B] w-[195px] h-[192px] md:w-[232px] md:h-[202px] py-[34px] px-[17px] md:px-[22px] gap-[10px] bg-[#FFFFFF] rounded-[24px] flex flex-col items-center justify-center'>
-          <img src="/images/icon4.png" alt="" />
-          <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>#TheStartSwitch</h3>
-        </Link>
-        <button
-          onClick={openModal}
-          className='hover:border-b  cursor-pointer border-[#CD623B] w-[195px] h-[192px] md:w-[232px] md:h-[202px] py-[34px] px-[17px] md:px-[22px] gap-[10px] bg-[#FFFFFF] rounded-[24px] flex flex-col items-center justify-center'>
-          <img src="/images/icon5.png" alt="" />
-          <h3 className='text-lg md:text-xl font-semibold playfair text-[#151515] '>Contact</h3>
-        </button>
-      </section> */}
-
-      {/* ===== Footer Section ===== */}
       <footer className="bg-[#262A34] text-gray-300 py-12 px-6 mt-4 md:mt-[100px]">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-white text-2xl font-semibold mb-10 playfair">
@@ -81,7 +99,6 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* ===== Contact Modal ===== */}
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
@@ -99,12 +116,11 @@ const Footer = () => {
               transition={{ type: 'spring', stiffness: 200, damping: 20 }}
               className="relative bg-white rounded-2xl shadow-2xl max-w-[600px] w-full mx-4 p-8"
             >
-              {/* Close Button */}
               <button
                 onClick={closeModal}
                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition"
               >
-                <X size={22} className=' cursor-pointer' />
+                <X size={22} className="cursor-pointer" />
               </button>
 
               <h2 className="text-2xl font-semibold text-[#151515] mb-6 playfair text-center">
@@ -113,42 +129,47 @@ const Footer = () => {
 
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-1">
-                    Name
-                  </label>
+                  <label className="block text-sm font-medium text-gray-600 mb-1">Name</label>
                   <input
                     type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#CD623B]"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-1">
-                    Email
-                  </label>
+                  <label className="block text-sm font-medium text-gray-600 mb-1">Email</label>
                   <input
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#CD623B]"
                     placeholder="you@example.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-1">
-                    Message
-                  </label>
+                  <label className="block text-sm font-medium text-gray-600 mb-1">Message</label>
                   <textarea
                     rows={4}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#CD623B]"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
                 <button
                   type="button"
-                  className="w-full bg-[#CD623B] text-white py-2 rounded-lg font-medium hover:bg-[#b65531] transition  cursor-pointer"
+                  onClick={handleSubmit}
+                  disabled={loading}
+                  className="w-full bg-[#CD623B] text-white py-2 rounded-lg font-medium hover:bg-[#b65531] transition cursor-pointer disabled:opacity-50"
                 >
-                  Send Message
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
+
+              {error && <p className="text-red-500 text-sm mt-3 text-center">{error}</p>}
+              {success && <p className="text-green-500 text-sm mt-3 text-center">Message sent successfully!</p>}
             </motion.div>
           </motion.div>
         )}

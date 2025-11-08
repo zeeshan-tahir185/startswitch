@@ -2,7 +2,7 @@ import React from 'react'
 
 const Movements = () => {
     return (
-        <section className='sm:mx-4 md:mx-[87px] ' id='movement'>
+        <section className='sm:mx-4 md:mx-[30px] 2xl:mx-[87px] ' id='movement'>
             <section className='max-w-[1746px] movements_bg rounded-3xl md:rounded-[90px] mx-auto bg-white min-h-[935px] flex flex-col lg:flex-row gap-3 md:gap-[50px] justify-center items-center pt-[38px] px-[15px] p-[20px]'>
                 <div className='flex flex-col gap-[21px] md:gap-[31px] w-full lg:w-[616px] text-center md:text-left'>
                     <h2 className='text-[38px] leading-[49px] md:text-[70px] 2xl:text-[80px] md:leading-[106px] playfair font-medium text-white'>Join the movement → <br />
