@@ -43,7 +43,7 @@ const InsideBook = () => {
                     </div>
                 </div>
                 <Image src="/images/inside.png" alt="inside section image" width={672} height={750} className='w-full lg:w-[470px] 2xl:w-[587px] hidden lg:block' />
-                <Image width={314} height={412} src="/images/inside_mob.svg" alt="inside mobile image" className='w-full md:w-[587px] lg:hidden' />
+                <Image width={314} height={412} src="/images/inside_mob.png" alt="inside mobile image" className='w-full md:w-[587px] lg:hidden' />
             </section>
             <section className='max-w-[1167px] w-full bg-[#262A34] rounded-3xl h-[166px] md:h-[213px] flex justify-center items-center py-[31px] px-[14px] mt-4 md:mt-0 mx-auto lg:absolute bottom-[-100px] left-0 right-0 '>
                 <h3 className='playfair text-[32px] leading-[52px] md:text-[42px] md:leading-[62px] font-semibold text-[#FFFFFF] text-center'>Read it in a weekend. <br />
