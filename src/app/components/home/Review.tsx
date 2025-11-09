@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import React, { useState, useRef } from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 import { GoArrowUpRight } from 'react-icons/go'
@@ -65,7 +66,7 @@ const Review = () => {
         >
           {/* Email input */}
           <div className='w-full md:w-[566px] bg-white mx-auto py-[16px] px-[32px] md:py-[20px] h-[56px] md:h-[64px] flex items-center gap-[10px] rounded-[90px]'>
-            <img src='/images/email.png' alt='' />
+            <Image width={24} height={24} src='/images/email.png' alt='email icon' />
             <input
               type='email'
               name='email'
@@ -98,7 +99,7 @@ const Review = () => {
               >
                 {fileName ? fileName.slice(0, 10) + '...' : 'Select a file'}
                 <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'>
-                  <img src='/images/file.png' alt='' />
+                  <Image width={11} height={14} src='/images/file.png' alt='file icon' />
                 </span>
               </button>
 

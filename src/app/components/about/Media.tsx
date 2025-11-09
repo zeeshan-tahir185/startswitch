@@ -6,15 +6,11 @@ const Media = () => {
     return (
         <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-col gap-[25px] md:gap-[67px] w-full items-center justify-center' id='freetoolkit'>
             <div className='w-full flex flex-col lg:flex-row gap-3 md:gap-[50px] items-center justify-center text-center'>
-                {/* <img src="/images/today.png" alt="" className='rounded-[15px] w-full lg:w-[600px]' /> */}
                 <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[700px] items-center justify-center'>
                     <div className='flex flex-col gap-[13px] lg:gap-[10px]'>
                         <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium'>In The
                             <span className='text-[#CD623B]'> Media</span>
                         </h2>
-                        {/* <p className=' hidden lg:block text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold' style={{ letterSpacing: "0.18px" }}>
-                            Don’t just read. Start.
-                        </p> */}
                     </div>
                     <p className='text-lg leading-[27px] lato text-[#262A34] font-medium' style={{ letterSpacing: "0.18px" }}>Anil’s story has been featured in <b>Bloomberg, Schwab Network</b>, and other leading
                         platforms. He has appeared on podcasts such as <b>Absolute Return</b>, where he shared

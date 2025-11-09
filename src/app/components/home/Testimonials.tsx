@@ -4,6 +4,7 @@ import Slider, { Settings } from 'react-slick'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import Image from 'next/image'
 
 const Testimonials = () => {
   const testimonials = [
@@ -65,7 +66,7 @@ const Testimonials = () => {
 
       <div className='flex items-center gap-[30px]'>
         <h4 className='hidden md:block text-[22px] font-vbold playfair text-[#151515]'>5 Stars</h4>
-        <img src='/images/stars.png' alt='stars' />
+        <Image width={170} height={27} src='/images/stars.png' alt='stars image' />
       </div>
 
       {/* ✅ Desktop View */}

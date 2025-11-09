@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
@@ -9,11 +10,7 @@ const Today = () => {
                 <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[570px]'>
                     <div className='flex flex-col gap-[13px] lg:gap-[10px]'>
                         <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium'>Today
-                            {/* <span className='text-[#CD623B]'> Switch Toolkit</span> */}
                         </h2>
-                        {/* <p className=' hidden lg:block text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold' style={{ letterSpacing: "0.18px" }}>
-                            Don’t just read. Start.
-                        </p> */}
                     </div>
                     <p className='text-lg leading-[27px] lato text-[#262A34] font-medium' style={{ letterSpacing: "0.18px" }}>Today, Anil leads Alphabyte Ventures, bringing the same principles from The <span className='italic'>Start Switch</span> into
                         the companies he builds. Each venture starts with intent, scales with clarity, and stays anchored
@@ -31,8 +28,7 @@ const Today = () => {
                         </button>
                     </Link>
                 </div>
-                <img src="/images/today.png" alt="" className='rounded-[15px] w-full lg:w-[600px]' />
-
+                <Image src="/images/today.png"  alt="" width={600} height={350} className='rounded-[15px] w-full lg:w-[600px]' />
             </div>
         </section>
     )

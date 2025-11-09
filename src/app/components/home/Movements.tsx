@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Movements = () => {
@@ -17,7 +18,7 @@ const Movements = () => {
                         It’s a decision. <br />
                         The more you show, the more others start</p>
                 </div>
-                <img src="/images/movement.svg" alt="" className='w-full lg:w-[450px] 2xl:w-[522px] ' />
+                <Image width={522} height={567} src="/images/movement.svg" alt="movements image" className='w-full lg:w-[450px] 2xl:w-[522px] ' />
             </section>
 
         </section>

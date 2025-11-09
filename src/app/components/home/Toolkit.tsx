@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import React, { useState } from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -87,7 +88,7 @@ const Toolkit = () => {
             <p className='text-base lato font-medium'>Email</p>
             <div className='bg-[#262A340D] border border-[#3032441C] w-full min-h-[88px] px-[22px] py-[16px] lg:p-[22px] rounded-xl flex items-center justify-between'>
               <div className='flex items-center gap-[12px]'>
-                <img src='/images/email.png' alt='' />
+                <Image width={24} height={24} src='/images/email.png' alt='email icon' />
                 <input
                   type='email'
                   name='email'
@@ -163,7 +164,7 @@ const Toolkit = () => {
               key={i}
               className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px] w-full sm:w-[280px]'
             >
-              <img src='/images/check.png' alt='' />
+              <Image width={24} height={24} src='/images/check.png' alt='check icon' />
               <p>{item}</p>
             </div>
           ))}

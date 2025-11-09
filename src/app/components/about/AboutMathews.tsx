@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
@@ -5,7 +6,7 @@ import { GoArrowUpRight } from 'react-icons/go'
 const AboutMathews = () => {
     return (
         <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-col lg:flex-row gap-[30px] w-full items-center justify-between pt-[40px]' id='about'>
-            <img src="/images/about.png" alt="" className='w-full h-[400px] lg:h-auto lg:w-[491px] object-cover object-top rounded-[24px]' />
+            <Image width={491} height={695} alt="about image" src="/images/about.png" className='w-full h-[400px] lg:h-auto lg:w-[491px] object-cover object-top rounded-[24px]' />
             <div className='flex flex-col gap-[21px] md:gap-[31px] w-full lg:w-[620px]'>
                 <h1 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] font-medium playfair text-[#151515]'>About
                     <span className='text-[#CD623B]'> Anil Mathews</span></h1>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
@@ -17,15 +18,15 @@ const FlipSwitch = () => {
                     </div>
                     <div className='flex flex-col gap-[2px] '>
                         <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px]'>
-                            <img src="/images/check.png" alt="" />
+                            <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                             <p>Book + Toolkit</p>
                         </div>
                         <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px]'>
-                            <img src="/images/check.png" alt="" />
+                            <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                             <p>7-Day Start Sprint</p>
                         </div>
                         <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px]'>
-                            <img src="/images/check.png" alt="" />
+                            <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                             <p>Your idea finally in motion</p>
                         </div>
                     </div>
@@ -46,7 +47,7 @@ const FlipSwitch = () => {
                             </button></Link>
                     </div>
                 </div>
-                <img src="/images/flip.png" alt="" className='w-full lg:w-[600px] 2xl:w-[800]' />
+                <Image src="/images/flip.png" width={721} height={721} alt="start switch image" className='w-full lg:w-[600px] 2xl:w-[800]' />
             </section>
 
         </section>

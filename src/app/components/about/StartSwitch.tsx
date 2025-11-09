@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
@@ -25,23 +26,7 @@ const StartSwitch = () => {
 
                         </p>
                     </div>
-                    {/* <div className='flex flex-col gap-[2px] '>
-                        <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px]'>
-                            <img src="/images/check.png" alt="" />
-                            <p>Book + Toolkit</p>
-                        </div>
-                        <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px]'>
-                            <img src="/images/check.png" alt="" />
-                            <p>7-Day Start Sprint</p>
-                        </div>
-                        <div className='flex text-base lato leading-6 font-medium text-[#000000] py-[8px] items-center gap-[22px]'>
-                            <img src="/images/check.png" alt="" />
-                            <p>Your idea finally in motion</p>
-                        </div>
-                    </div> */}
-                    {/* <p className='text-[28px] leading-[27px] lato text-[#0C0407] font-bold hidden md:block' style={{ letterSpacing: "0.18px" }}>
-                        This is your Day 1.
-                    </p> */}
+                    
                     <div className='flex justify-start items-center gap-2.5 md:gap-3 flex-wrap'>
                         <Link href="/#graph">
                             <button className='hover:bg-[#CD623B] transition cursor-pointer w-[163px] h-[50px] md:w-[196px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'>
@@ -56,7 +41,7 @@ const StartSwitch = () => {
                             </button></Link>
                     </div>
                 </div>
-                <img src="/images/flip.png" alt="" className='w-full lg:w-[600px] 2xl:w-[800]' />
+                <Image src="/images/flip.png" width={721} height={721} alt="start switch image" className='w-full lg:w-[600px] 2xl:w-[800]' />
             </section>
 
         </section>
