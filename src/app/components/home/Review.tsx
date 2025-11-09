@@ -104,8 +104,10 @@ const Review = () => {
               </button>
 
               {/* ✅ File input (invisible but validated) */}
+              <label htmlFor="fileUpload" className="sr-only">Upload file</label>
               <input
                 ref={fileInputRef}
+                id="fileUpload"
                 type='file'
                 name='file'
                 required

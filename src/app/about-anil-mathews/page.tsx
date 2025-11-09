@@ -50,7 +50,7 @@ export const metadata = {
 
 const Page = () => {
   return (
-    <>
+    <main>
       <Head>
         {/* JSON-LD Structured Data */}
         <script
@@ -155,7 +155,7 @@ const Page = () => {
         <Media />
         <Footer />
       </section>
-    </>
+    </main>
   )
 }
 

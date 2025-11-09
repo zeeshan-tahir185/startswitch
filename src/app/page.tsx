@@ -55,7 +55,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <>
+    <main>
       <Head>
         <script
           type="application/ld+json"
@@ -123,7 +123,7 @@ const page = () => {
       <AboutAuthor />
       <FlipSwitch />
       <Footer />
-    </>
+    </main>
   )
 }
 

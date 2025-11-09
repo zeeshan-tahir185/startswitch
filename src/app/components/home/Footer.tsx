@@ -71,7 +71,7 @@ const Footer = () => {
                 <li><Link href="/#graph" className="hover:text-white transition">The Switch Curve™</Link></li>
                 <li><Link href="/#freetoolkit" className="hover:text-white transition">The Toolkit</Link></li>
                 <li><Link href="https://www.amazon.com/dp/B0FH41DL25" rel="noopener" target='_blank' className="hover:text-white transition">Buy the Book</Link></li>
-                <li><Link  href="/about-anil-mathews" className="hover:text-white transition">About the Author</Link></li>
+                <li><Link href="/about-anil-mathews" className="hover:text-white transition">About the Author</Link></li>
               </ul>
             </div>
 
@@ -129,8 +129,9 @@ const Footer = () => {
 
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-1">Name</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-600 mb-1">Name</label>
                   <input
+                    id="name"
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -139,8 +140,9 @@ const Footer = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-1">Email</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-1">Email</label>
                   <input
+                    id='email'
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
