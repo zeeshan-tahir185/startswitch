@@ -61,7 +61,7 @@ const Testimonials = () => {
   return (
     <section className='max-w-[1300px] mx-auto px-[15px] md:px-6 py-[26px] md:py-[99px] flex flex-col gap-[18px] md:gap-[30px] w-full items-center justify-center md:mt-[100px]'>
       <h2 className='text-center text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[100px] playfair font-medium text-[#151515]'>
-        What readers <span className='text-[#CD623B]'>are saying</span>
+        What readers <br className='md:hidden' /> <span className='text-[#CD623B]'>are saying</span>
       </h2>
 
       <div className='flex items-center gap-[30px]'>

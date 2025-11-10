@@ -7,8 +7,8 @@ const InsideBook = () => {
             <section className='max-w-[1746px] rounded-3xl md:rounded-[90px] mx-auto bg-white min-h-[1000px] flex flex-col lg:flex-row gap-3 md:gap-[50px] justify-center items-center pt-[40px] px-[15px] p-[20px]'>
                 <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[650px]'>
                     <div className='flex flex-col gap-[13px] lg:gap-[10px]'>
-                        <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium'>What’s inside<br />
-                            <span className='italic font-semibold text-[#CD623B]'>the book</span>
+                        <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium'>What’s inside<br className='hidden md:block' />
+                            <span className='italic font-semibold text-[#CD623B]'> the book</span>
                         </h2>
                         <p className='text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold' style={{ letterSpacing: "0.18px" }}>
                             A roadmap for finally starting—and sticking.
@@ -43,7 +43,7 @@ const InsideBook = () => {
                     </div>
                 </div>
                 <Image src="/images/inside.png" alt="inside section image" width={672} height={750} className='w-full lg:w-[470px] 2xl:w-[587px] hidden lg:block' />
-                <Image width={314} height={412} src="/images/inside_mob.png" alt="inside mobile image" className='w-full md:w-[587px] lg:hidden' />
+                <Image width={314} height={412} src="/images/inside_mob.png" alt="inside mobile image" className='w-[314px] md:w-[587px] lg:hidden' />
             </section>
             <section className='max-w-[1167px] w-full bg-[#262A34] rounded-3xl h-[166px] md:h-[213px] flex justify-center items-center py-[31px] px-[14px] mt-4 md:mt-0 mx-auto lg:absolute bottom-[-100px] left-0 right-0 '>
                 <h3 className='playfair text-[32px] leading-[52px] md:text-[42px] md:leading-[62px] font-semibold text-[#FFFFFF] text-center'>Read it in a weekend. <br />

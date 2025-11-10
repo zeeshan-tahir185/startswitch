@@ -53,7 +53,7 @@ const Toolkit = () => {
         <div className='flex flex-col gap-[13px] md:gap-[23px] w-full lg:w-[570px]'>
           <div className='flex flex-col gap-[13px] lg:gap-[10px]'>
             <h2 className='text-[38px] leading-[49px] md:text-[80px] 2xl:text-[100px] md:leading-[106px] playfair font-medium text-center md:text-left'>
-              Your free Start <span className='text-[#CD623B]'> Switch Toolkit</span>
+              Your free Start <br className='md:hidden' /> <span className='text-[#CD623B]'> Switch Toolkit</span>
             </h2>
             <p
               className='hidden lg:block text-lg leading-[27px] md:text-[22px] lato text-[#0C0407] font-bold'
@@ -136,7 +136,7 @@ const Toolkit = () => {
             The Start Switch Toolkit is your free companion to take action fast —before the overthinking creeps back in.
           </p>
           <p
-            className='text-lg lg:hidden leading-[27px] lato text-[#262A34] font-semibold'
+            className='text-lg lg:hidden leading-[27px] lato text-[#262A34] font-medium'
             style={{ letterSpacing: '0.18px' }}
           >
             Included with every book. Or download it free now.

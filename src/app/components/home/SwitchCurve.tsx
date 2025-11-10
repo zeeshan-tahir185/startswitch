@@ -21,7 +21,7 @@ const SwitchCurve = () => {
             </div>
             <Image width={1249} height={718} src="/images/graph.svg" alt="switch curve image" className='' />
             <div className='flex flex-wrap justify-center items-center gap-[12px] md:gap-[14px] flex-col sm:flex-row'>
-                <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
+                <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col justify-center gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
                     <div className='flex  items-center gap-[12px] '>
                         <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                         <h3 className='text-xl text-[#151515] font-semibold playfair'>Drift:</h3>
@@ -29,28 +29,28 @@ const SwitchCurve = () => {
                     <p className='lato text-base font-medium text-[#52555B]'>You’re thinking, researching, planning— but
                         not acting</p>
                 </div>
-                 <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
+                 <div className='w-full sm:w-[390px] h-[126px] justify-center p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
                     <div className='flex  items-center gap-[12px] '>
                         <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                         <h3 className='text-xl text-[#151515] font-semibold playfair'>Bend:</h3>
                     </div>
                     <p className='lato text-base font-medium text-[#52555B]'>You’ve started, but momentum hasn’t kicked in</p>
                 </div>
-                 <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
+                 <div className='w-full sm:w-[390px] h-[126px] justify-center p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
                     <div className='flex  items-center gap-[12px] '>
                         <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                         <h3 className='text-xl text-[#151515] font-semibold playfair'>Switch:</h3>
                     </div>
                     <p className='lato text-base font-medium text-[#52555B]'>You go visible. You commit.</p>
                 </div>
-                 <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
+                 <div className='w-full sm:w-[390px] h-[126px] justify-center p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
                     <div className='flex  items-center gap-[12px] '>
                         <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                         <h3 className='text-xl text-[#151515] font-semibold playfair'>Stack:</h3>
                     </div>
                     <p className='lato text-base font-medium text-[#52555B]'>Small wins build. Identity shifts.</p>
                 </div>
-                 <div className='w-full sm:w-[390px] h-[126px] p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
+                 <div className='w-full sm:w-[390px] h-[126px] justify-center p-[23px] flex flex-col gap-[2px] bg-[#FFFFFF] rounded-[16px]'>
                     <div className='flex  items-center gap-[12px] '>
                         <Image width={24} height={24} src="/images/check.png" alt="check icon" />
                         <h3 className='text-xl text-[#151515] font-semibold playfair'>Breakthrough:</h3>

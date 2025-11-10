@@ -18,7 +18,7 @@ const Movements = () => {
                         It’s a decision. <br />
                         The more you show, the more others start</p>
                 </div>
-                <Image width={522} height={567} src="/images/movement.png" alt="movements image" className='w-full lg:w-[450px] 2xl:w-[522px] ' />
+                <Image width={522} height={567} src="/images/movement.png" alt="movements image" className='w-full mr-[50px] lg:w-[450px] 2xl:w-[522px] ' />
             </section>
 
         </section>

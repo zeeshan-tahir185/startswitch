@@ -47,9 +47,9 @@ const Review = () => {
   }
 
   return (
-    <section className='max-w-[1300px] w-[95%] mx-auto px-[16px] sm:px-[39px] py-[50px] md:py-[99px] flex flex-col md:w-full items-center rounded-[24px] md:rounded-none justify-start review_bg min-h-[550px] md:min-h-[750px]'>
+    <section className='max-w-[1300px] w-[95%] mx-auto px-[16px] sm:px-[39px] py-[40px] md:py-[99px] flex flex-col md:w-full items-center rounded-[24px] md:rounded-none justify-start review_bg min-h-[550px] md:min-h-[750px]'>
       <div className='flex flex-col gap-[16px] md:gap-[32px]'>
-        <h2 className='text-[26px] sm:text-[32px] leading-[42px] text-center md:text-[64px] md:leading-[75px] font-medium playfair text-white'>
+        <h2 className='text-[32px] leading-[42px] text-center md:text-[64px] md:leading-[75px] font-medium playfair text-white'>
           Leave a review → <br />
           Get my next book free
         </h2>
@@ -82,7 +82,7 @@ const Review = () => {
             {/* Send Proof button */}
             <button
               type='submit'
-              className='w-[120px] sm:w-[153px] h-[50px] md:w-[183px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-[10px] sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'
+              className='w-[153px] h-[50px] md:w-[183px] md:h-[60px] p-2.5 pl-[22px] md:p-3 md:pl-[26px] rounded-[28px] md:rounded-[30px] bg-[#151515] border border-[#FFFFFF] md:border-none playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#FFFFFF] flex justify-between items-center'
             >
               Send Proof
               <span className='w-[30px] md:w-9 h-[30px] md:h-9 rounded-full bg-[#CD623B] text-white flex items-center justify-center'>
@@ -91,10 +91,10 @@ const Review = () => {
             </button>
 
             {/* Select file button */}
-            <div className='relative w-[130px] sm:w-[154px] h-[50px] md:w-[185px] md:h-[60px]'>
+            <div className='relative w-[154px] h-[50px] md:w-[185px] md:h-[60px]'>
               <button
                 type='button'
-                className='absolute inset-0 w-full h-full rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] md:border-none playfair text-[10px] sm:text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center p-2.5 pl-[22px] md:p-3 md:pl-[26px]'
+                className='absolute inset-0 w-full h-full rounded-[28px] md:rounded-[30px] bg-[#FFFFFF] border border-[#CD623B] md:border-none playfair text-[15px] md:text-lg leading-[21px] md:leading-[26px] text-[#0C0407] flex justify-between items-center p-2.5 pl-[22px] md:p-3 md:pl-[26px]'
                 onClick={() => fileInputRef.current?.click()}
               >
                 {fileName ? fileName.slice(0, 10) + '...' : 'Select a file'}

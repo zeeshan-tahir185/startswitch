@@ -47,7 +47,8 @@ const FlipSwitch = () => {
                             </button></Link>
                     </div>
                 </div>
-                <Image src="/images/flip.png" width={721} height={721} alt="start switch image" className='w-full lg:w-[600px] 2xl:w-[800]' />
+                <Image src="/images/flip.png" width={721} height={721} alt="start switch image" className='hidden lg:block lg:w-[600px] 2xl:w-[800]' />
+                <Image src="/images/flip-mob.png" width={399} height={411} alt="start switch image" className='w-full lg:hidden mt-[20px] mb-[-20px]' />
             </section>
 
         </section>

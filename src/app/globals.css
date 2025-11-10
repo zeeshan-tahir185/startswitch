@@ -81,6 +81,14 @@ body::before {
     background-size: cover;
     background-position: center;
   }
+  .hero_section_bg {
+  position: relative; /* important for ::before positioning */
+  background: url("/images/hero_mob_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  z-index: 2; /* default */
+}
 }
 @media screen and (min-width: 1600px) {
   .hero_section_bg {

@@ -57,7 +57,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-[#262A34] text-gray-300 py-12 px-6 mt-4 md:mt-[100px]">
+      <footer className="bg-[#262A34] text-gray-300 py-12 px-6 md:mt-[100px]">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-white text-2xl font-semibold mb-10 playfair">
             Make progress inevitable.
