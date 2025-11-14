@@ -16,8 +16,15 @@ const HeroSedtion = dynamic(()=>import('@/app/components/home/HeroSedtion'))
 export const metadata = {
   title: 'The Start Switch | Make progress inevitable',
   icons: {
-    icon: '/images/favicon.png',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96' }
+    ],
+    apple: '/apple-touch-icon.png',
   },
+
+  manifest: '/site.webmanifest',
   description:
     'A practical book and toolkit to help you stop overthinking, start small, and build momentum that lasts.',
   alternates: {
