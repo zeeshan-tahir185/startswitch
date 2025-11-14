@@ -13,10 +13,9 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: 'The Start Switch <noreply@email.thestartswitch.com>',
-      to: 'author@mathews.com', 
-      subject: 'New Contact Form Submission',
+      to: 'author@mathews.com',  // stays same (client receives the contact form)
+      subject: 'Contact Form Submission',
       html: `
-        <h3>New message from The Start Switch</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong></p>

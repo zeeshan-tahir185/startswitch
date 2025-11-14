@@ -16,7 +16,6 @@ export async function POST(req: Request) {
       );
     }
 
-    // Type assertion to File
     if (!(fileEntry instanceof File)) {
       return NextResponse.json(
         { success: false, message: 'Invalid file.' },
@@ -24,17 +23,16 @@ export async function POST(req: Request) {
       );
     }
 
-    const file: File = fileEntry; // now TS knows it's a File
+    const file: File = fileEntry;
     const buffer = Buffer.from(await file.arrayBuffer());
 
     const data = await resend.emails.send({
       from: 'The Start Switch <noreply@email.thestartswitch.com>',
       to: 'author@mathews.com',
-      subject: 'New Review Form Submission',
+      subject: 'Review Proof Submission',
       html: `
-        <h3>New Review Submission</h3>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>File:</strong> Attached below.</p>
+        <p>Attached is the proof sent by a website visitor. Please be careful while opening attachments.</p>
       `,
       attachments: [
         {
