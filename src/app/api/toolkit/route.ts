@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       Here’s your Toolkit PDF:
     </p>
 
-    <a href="/The_Start_Switch-Toolkit-v2.pdf"
+    <a href="https://drive.google.com/file/d/11DLss0-IjqKQ5CgaDFrTTLwNLdr1vP38/view"
        style="
          display: inline-block;
          background: #CD623B;
