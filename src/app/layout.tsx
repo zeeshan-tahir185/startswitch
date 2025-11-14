@@ -23,6 +23,8 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="The Start Switch" />
+
       </head>
       <body
       >
